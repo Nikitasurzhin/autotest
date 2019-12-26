@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="TagankaTest" file="C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php" tests="6" assertions="0" errors="6" failures="0" skipped="0" time="0.000000">
+    <testcase name="testGetSubjectInPeriod" class="TagankaTest" classname="TagankaTest" file="C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php" line="31" assertions="0" time="0.000000">
+      <error type="SoapFault">TagankaTest::testGetSubjectInPeriod
+SoapFault: SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://stends.elt-poisk.com/492-0-T/soapTaganka.php?wsdl' : failed to load external entity "http://stends.elt-poisk.com/492-0-T/soapTaganka.php?wsdl"
+
+
+C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php:27
+</error>
+    </testcase>
+    <testcase name="testImportContract" class="TagankaTest" classname="TagankaTest" file="C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php" line="47" assertions="0" time="0.000000">
+      <error type="SoapFault">TagankaTest::testImportContract
+SoapFault: SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://stends.elt-poisk.com/492-0-T/soapTaganka.php?wsdl' : failed to load external entity "http://stends.elt-poisk.com/492-0-T/soapTaganka.php?wsdl"
+
+
+C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php:27
+</error>
+    </testcase>
+    <testcase name="testGetActList" class="TagankaTest" classname="TagankaTest" file="C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php" line="114" assertions="0" time="0.000000">
+      <error type="SoapFault">TagankaTest::testGetActList
+SoapFault: SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://stends.elt-poisk.com/492-0-T/soapTaganka.php?wsdl' : failed to load external entity "http://stends.elt-poisk.com/492-0-T/soapTaganka.php?wsdl"
+
+
+C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php:27
+</error>
+    </testcase>
+    <testcase name="testCreateClosedActs" class="TagankaTest" classname="TagankaTest" file="C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php" line="124" assertions="0" time="0.000000">
+      <error type="SoapFault">TagankaTest::testCreateClosedActs
+SoapFault: SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://stends.elt-poisk.com/492-0-T/soapTaganka.php?wsdl' : failed to load external entity "http://stends.elt-poisk.com/492-0-T/soapTaganka.php?wsdl"
+
+
+C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php:27
+</error>
+    </testcase>
+    <testcase name="testChangeStatusAct" class="TagankaTest" classname="TagankaTest" file="C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php" line="134" assertions="0" time="0.000000">
+      <error type="SoapFault">TagankaTest::testChangeStatusAct
+SoapFault: SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://stends.elt-poisk.com/492-0-T/soapTaganka.php?wsdl' : failed to load external entity "http://stends.elt-poisk.com/492-0-T/soapTaganka.php?wsdl"
+
+
+C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php:27
+</error>
+    </testcase>
+    <testcase name="testGetInvoiceData" class="TagankaTest" classname="TagankaTest" file="C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php" line="148" assertions="0" time="0.000000">
+      <error type="SoapFault">TagankaTest::testGetInvoiceData
+SoapFault: SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://stends.elt-poisk.com/492-0-T/soapTaganka.php?wsdl' : failed to load external entity "http://stends.elt-poisk.com/492-0-T/soapTaganka.php?wsdl"
+
+
+C:\Users\r.kulinkovich\PhpstormProjects\untitled\tests\TagankaTest.php:27
+</error>
+    </testcase>
+  </testsuite>
+</testsuites>

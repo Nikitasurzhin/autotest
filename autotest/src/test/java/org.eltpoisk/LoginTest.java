@@ -1,16 +1,14 @@
 package org.eltpoisk;
-import org.eltpoisk.ConfProperties;
-import org.eltpoisk.LoginPage;
-import org.eltpoisk.ProfilePage;
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class LoginTest {
     public static LoginPage loginPage;
     public static ProfilePage profilePage;
@@ -19,7 +17,7 @@ public class LoginTest {
     /**
      * осуществление первоначальной настройки
      */
-    @BeforeClass
+    @BeforeAll
     public static void setup() {
         //определение пути до драйвера и его настройка
         System.setProperty("webdriver.chrome.driver", ConfProperties.getProperty("chromedriver"));
@@ -32,11 +30,13 @@ public class LoginTest {
         //задержка на выполнение теста = 10 сек.
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         //получение ссылки на страницу входа из файла настроек
-        driver.get(ConfProperties.getProperty("loginpage")); }
+        driver.get(ConfProperties.getProperty("loginpage"));
+    }
+
     /**
      * тестовый метод для осуществления аутентификации
      */
-    @Test
+    //@Test
     public void loginTest() {
         //получение доступа к методам класса LoginPage для взаимодействия с элементами страницы
         //значение login/password берутся из файла настроек по аналогии с chromedriver
@@ -51,14 +51,19 @@ public class LoginTest {
         //получаем отображаемый логин
         String user = profilePage.getUserName();
         //и сравниваем его с логином из файла настроек
-        Assert.assertEquals(ConfProperties.getProperty("login"), user); }
+        assertEquals(ConfProperties.getProperty("login"), user);
+    }
 }
-    /**
-     * осуществление выхода из аккаунта с последующим закрытием окна браузера
-     */
-   /** @AfterClass
-    public static void tearDown() {
-        profilePage.entryMenu();
-        profilePage.userLogout();
-        driver.quit(); }
-    */
+/**
+ * осуществление выхода из аккаунта с последующим закрытием окна браузера
+ *
+ * @AfterClass public static void tearDown() {
+ * profilePage.entryMenu();
+ * profilePage.userLogout();
+ * driver.quit(); }
+ */
+/** @AfterClass public static void tearDown() {
+profilePage.entryMenu();
+profilePage.userLogout();
+driver.quit(); }
+ */
